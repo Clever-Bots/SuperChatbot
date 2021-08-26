@@ -17,7 +17,7 @@ const superchatbot = require('superchatbot');
 
 const client = new superchatbot.Client();
 
-client.chat({message:"Hello, How are you?", name:"SmartestChatbot", owner:"SexyOwnerlol", user: Cooluniqueuserid-in-number, language:"a__h_leLanguage"}).then(reply => {
+client.chat({message:"Hello, How are you?", name:"SuperChatbot", owner:"SexyOwnerlol", user: Cooluniqueuserid-in-number, language:"a__h_leLanguage"}).then(reply => {
 console.log(reply);
 });
 ```
