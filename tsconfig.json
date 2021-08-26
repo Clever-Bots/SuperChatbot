@@ -1,4 +1,3 @@
-  
 {
     "include": ["./index.js"],
     "compilerOptions": {
@@ -6,5 +5,5 @@
       "declaration": true,
       "emitDeclarationOnly": true,
       "outDir": "./typings"
-    }..0
+    }
   }
