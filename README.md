@@ -50,10 +50,9 @@ client.on("messageCreate", async message => {
     message.reply(`${reply}`);
   });
 });
-client.login("Your Token")```
+client.login("Your Token")
+  ```
   
-  
-
 # Supported Languages
 **Language Name**|**Language Code**
 :-----:|:-----:
