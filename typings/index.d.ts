@@ -42,3 +42,4 @@ export class Client {
     }): Promise<string>;
 }
 export declare const version: any;
+
