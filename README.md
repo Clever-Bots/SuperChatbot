@@ -11,7 +11,7 @@ SuperChatBot is a quick way to easily make your own Chat Bot which can reply in 
 
 # Example
   
-Javascript
+## Javascript
 ```js
 const superchatbot = require('superchatbot');
 
@@ -22,8 +22,35 @@ console.log(reply);
 });
 ```
 
-Discord.js
-Example for Discord.js Soon!!!
+## Discord.js
+```js
+const { Client } = require("discord.js");
+const {
+  AbortController
+} = require("abortcontroller-polyfill/dist/cjs-ponyfill");
+const client = new Client({ intents: 513 });
+const superchatbot = require("superchatbot");
+const x = new superchatbot.Client();
+client.on("messageCreate", async message => {
+  // client detects a message 
+  if(message.author.bot) return;
+  // if the author of the message is a bot ignore the case
+  message.content = message.content.replace(/@(everyone)/gi, "everyone").replace(/@(here)/gi, "here")
+  if(message.content.includes(`@`)) {
+    return message.reply({ content: `**:x: Please Don't Mention anyone while talking to me I wil cry 😭**`, ephemeral: true }); 
+  }
+  if(!message.content) return message.reply({ content: ":x: I could Only Reply to Text Messages", ephemeral: true });
+  x.chat({
+    message: message.content,
+    name: "Type ur Name Here",
+    user: message.author.id,
+    language: "en"
+  }).then(reply => {
+    message.channel.sendTyping();
+    message.reply(`${reply}`);
+  });
+});
+client.login("Your Token")```
 
 # Supported Languages
 **Language Name**|**Language Code**
