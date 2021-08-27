@@ -86,3 +86,4 @@ module.exports = {
     version: require("./package.json").version,
     Client: Client
 };
+// 1.0.6
