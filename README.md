@@ -51,6 +51,8 @@ client.on("messageCreate", async message => {
   });
 });
 client.login("Your Token")```
+  
+  
 
 # Supported Languages
 **Language Name**|**Language Code**
