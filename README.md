@@ -1,5 +1,5 @@
 <p align="center"><a href="https://nodei.co/npm/superchatbot/"><img src="https://nodei.co/npm/superchatbot.png"></a></p>
-<p align="center"><img src="https://img.shields.io/npm/v/superchatbot?style=for-the-badge"> <<img src="https://img.shields.io/npm/dt/superchatbot?style=for-the-badge">
+<p align="center"><img src="https://img.shields.io/npm/v/superchatbot?style=for-the-badge"> <img src="https://img.shields.io/npm/dt/superchatbot?style=for-the-badge">
   
 # SuperChatbot
   
